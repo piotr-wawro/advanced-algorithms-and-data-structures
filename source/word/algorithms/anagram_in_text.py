@@ -2,7 +2,7 @@ import json
 from word.algorithms.anagram_sort import anagram_sort
 
 def anagram_in_text(word: str) -> list[str]:
-    with open('word/algorithms/words_en.json', 'r') as file:
+    with open('./source/word/algorithms/words_en.json', 'r') as file:
         dict_words = json.load(file)
 
     anagrams: list[str] = []
